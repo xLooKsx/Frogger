@@ -41,6 +41,7 @@ public class EnemySpawn : MonoBehaviour
 
             GameObject instantiatedObject = GameObject.Instantiate(carPrefab, this.transform.position, Quaternion.identity);
             instantiatedObject.GetComponent<EnemyMovement>().isRightDirection = this.isRightDirection;
+            instantiatedObject.tag = isRightDirection ? "RightCar" : "LeftCar";
 
             isTimeToGenerateNewCar = false;
             currentCooldownTime = 0;
