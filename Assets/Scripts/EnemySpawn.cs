@@ -14,7 +14,6 @@ public class EnemySpawn : MonoBehaviour
     public bool isTimeToGenerateNewCar;
     void Start()
     {
-        cooldown = 8f;
         isTimeToGenerateNewCar = true;
         currentCooldownTime = 0f;
     }
