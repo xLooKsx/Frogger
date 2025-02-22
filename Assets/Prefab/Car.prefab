@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7245570951904795284}
   - component: {fileID: -2954724255766639481}
   - component: {fileID: 6184354660259548736}
+  - component: {fileID: -8161019653687763073}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0022660792, y: -0.01907456}
@@ -176,6 +177,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8161019653687763073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36988975767824767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6522c263c3d26458cd12d672246627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: 1
+  goalSpace: 0
 --- !u!1 &112900380181929234
 GameObject:
   m_ObjectHideFlags: 0
