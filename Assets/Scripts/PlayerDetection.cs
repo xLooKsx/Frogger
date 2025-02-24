@@ -14,8 +14,8 @@ public class PlayerDetection : MonoBehaviour
 
             if(enemy){
                 Destroy(collision.gameObject);
+                gameManagement.showGameOver();
             } else if(goalSpace){
-                Debug.Log("Parabéns!");
                 gameManagement.createNewRun();
             }
         }

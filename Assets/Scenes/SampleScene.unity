@@ -123,6 +123,87 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5790237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5790238}
+  - component: {fileID: 5790240}
+  - component: {fileID: 5790239}
+  m_Layer: 5
+  m_Name: gameOverMessage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &5790238
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5790237}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 749266922}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32, y: 407}
+  m_SizeDelta: {x: 653.4648, y: 273.3518}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5790239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5790237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 65
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 87
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Game Over
+
+    Press Spacebar'
+--- !u!222 &5790240
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5790237}
+  m_CullTransparentMesh: 1
 --- !u!1 &15325733
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,13 +296,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1759563530}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (1)
       objectReference: {fileID: 0}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_TagString
-      value: RightCar
+      value: LeftCar
       objectReference: {fileID: 0}
     - target: {fileID: 5662300048885427878, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -538,7 +623,7 @@ GameObject:
   m_Layer: 0
   m_Name: GoalSpace
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1365,13 +1450,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1759563530}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_TagString
-      value: RightCar
+      value: LeftCar
       objectReference: {fileID: 0}
     - target: {fileID: 5662300048885427878, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1430,6 +1519,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1225997775}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (3)
@@ -2435,6 +2528,7 @@ RectTransform:
   m_Children:
   - {fileID: 1960581345}
   - {fileID: 1576988960}
+  - {fileID: 5790238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2834,13 +2928,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1759563530}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (3)
       objectReference: {fileID: 0}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_TagString
-      value: RightCar
+      value: LeftCar
       objectReference: {fileID: 0}
     - target: {fileID: 5662300048885427878, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2990,7 +3088,7 @@ GameObject:
   m_Layer: 0
   m_Name: RightScreenLimit
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3127,6 +3225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1225997775}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car
@@ -3281,6 +3383,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1225997775}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (1)
@@ -3346,13 +3452,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1759563530}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (2)
       objectReference: {fileID: 0}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_TagString
-      value: RightCar
+      value: LeftCar
       objectReference: {fileID: 0}
     - target: {fileID: 5662300048885427878, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3495,6 +3605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 497826436}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car
@@ -3980,6 +4094,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1267346149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1267346150}
+  - component: {fileID: 1267346151}
+  m_Layer: 0
+  m_Name: spawnLane2
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1267346150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267346149}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.01, y: 0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1572819460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1267346151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267346149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9596769f53fed4429242c184cb3a421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+  isRightDirection: 0
+  carSpeed: 0
+  cooldown: 8
+  currentCooldownTime: 0
+  isTimeToGenerateNewCar: 0
+  gameManagement: {fileID: 0}
 --- !u!1 &1270597558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4391,6 +4556,10 @@ MonoBehaviour:
   player: {fileID: 1867988486}
   playerSpawnPoint: {fileID: 1569647149}
   scoreText: {fileID: 1576988961}
+  gameOverText: {fileID: 5790237}
+  lane1: {fileID: 1703901450}
+  lane2: {fileID: 1267346149}
+  lane3: {fileID: 1599913749}
 --- !u!4 &1453669178
 Transform:
   m_ObjectHideFlags: 0
@@ -4534,6 +4703,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1225997775}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (2)
@@ -4802,7 +4975,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerRespawnPlace
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4819,6 +4992,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1572819459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572819460}
+  m_Layer: 0
+  m_Name: EnemySpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572819460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572819459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: -0.12, z: -0.004652799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1703901451}
+  - {fileID: 1267346150}
+  - {fileID: 1599913750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576988959
@@ -4900,6 +5107,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576988959}
   m_CullTransparentMesh: 1
+--- !u!1 &1599913749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599913750}
+  - component: {fileID: 1599913751}
+  m_Layer: 0
+  m_Name: spawnLane3
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599913750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599913749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.44, y: 2.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1572819460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599913751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599913749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9596769f53fed4429242c184cb3a421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+  isRightDirection: 1
+  carSpeed: 0
+  cooldown: 8
+  currentCooldownTime: 0
+  isTimeToGenerateNewCar: 0
+  gameManagement: {fileID: 0}
 --- !u!1 &1607216011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5357,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1703901450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703901451}
+  - component: {fileID: 1703901452}
+  m_Layer: 0
+  m_Name: spawnLane1
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703901451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703901450}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.44, y: -1.92, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1572819460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1703901452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703901450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9596769f53fed4429242c184cb3a421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+  isRightDirection: 1
+  carSpeed: 0
+  cooldown: 8
+  currentCooldownTime: 0
+  isTimeToGenerateNewCar: 0
+  gameManagement: {fileID: 1453669177}
 --- !u!1 &1718380461
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,7 +5423,7 @@ GameObject:
   m_Layer: 0
   m_Name: LeftScreenLimit
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5251,6 +5560,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 497826436}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (3)
@@ -5832,6 +6145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 497826436}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (2)
@@ -6365,6 +6682,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 497826436}
     m_Modifications:
+    - target: {fileID: -8161019653687763073, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
+      propertyPath: gameManagement
+      value: 
+      objectReference: {fileID: 1453669177}
     - target: {fileID: 36988975767824767, guid: ddb3ccec4c7bbd240909d36fe1fa66a5, type: 3}
       propertyPath: m_Name
       value: Car (1)
@@ -6434,6 +6755,7 @@ SceneRoots:
   - {fileID: 1027955781}
   - {fileID: 1718380465}
   - {fileID: 1569647150}
+  - {fileID: 1572819460}
   - {fileID: 1566249241}
   - {fileID: 39050399}
   - {fileID: 417293006}

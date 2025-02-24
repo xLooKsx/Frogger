@@ -8,10 +8,11 @@ public class EnemySpawn : MonoBehaviour
 {
     public GameObject carPrefab;
     public bool isRightDirection;
-
+    public float carSpeed;
     public float cooldown;
     public float currentCooldownTime;
     public bool isTimeToGenerateNewCar;
+    public GameManagement gameManagement;
     void Start()
     {
         isTimeToGenerateNewCar = true;
@@ -39,8 +40,15 @@ public class EnemySpawn : MonoBehaviour
         if(isTimeToGenerateNewCar){
 
             GameObject instantiatedObject = GameObject.Instantiate(carPrefab, this.transform.position, Quaternion.identity);
-            instantiatedObject.GetComponent<EnemyMovement>().isRightDirection = this.isRightDirection;
             instantiatedObject.tag = isRightDirection ? "RightCar" : "LeftCar";
+
+            EnemyMovement instantiatedEnemyMovement = instantiatedObject.GetComponent<EnemyMovement>();
+            instantiatedEnemyMovement.isRightDirection = this.isRightDirection;
+            instantiatedEnemyMovement.updateSpeed(carSpeed);
+
+            PlayerDetection instantiatedPlayerDetection = instantiatedObject.GetComponent<PlayerDetection>();
+            instantiatedPlayerDetection.gameManagement = this.gameManagement;
+            
 
             isTimeToGenerateNewCar = false;
             currentCooldownTime = 0;

@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRightDirection: 0
+  speed: 0.5
 --- !u!61 &-2954724255766639481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: 1
   goalSpace: 0
+  gameManagement: {fileID: 0}
 --- !u!1 &112900380181929234
 GameObject:
   m_ObjectHideFlags: 0
