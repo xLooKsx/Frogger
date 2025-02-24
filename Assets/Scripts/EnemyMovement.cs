@@ -7,11 +7,10 @@ public class EnemyMovement : MonoBehaviour
 {
     public bool isRightDirection;
 
-    private float speed;
+    public float speed;
     private Vector3 direction;
     void Start()
     {
-        speed = 0.5f;
         DefineWalkDirection();        
     }
 
@@ -33,5 +32,9 @@ public class EnemyMovement : MonoBehaviour
     private void HorizontalMovement(){
 
         this.gameObject.transform.position += this.speed * Time.deltaTime * direction; 
+    }
+
+    public void updateSpeed(float newSpeed){
+        speed = newSpeed;
     }
 }
